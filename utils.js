@@ -1,5 +1,5 @@
 export function addTwoNumbers(a, b) {
-  return a + b;
+  return a + a;
 }
 
 export function multiplyTwoNumbers(a, b) {
