@@ -1,9 +1,9 @@
-import { multiplyTwoNumbers } from "./utils";
+import { addTwoNumbers, multiplyTwoNumbers } from "./utils";
 
-function addsTwoNumbersAndMultiplyByThree(a, b) {
-  return multiplyTwoNumbers((a + b) * 3);
+export function addsTwoNumbersAndMultiplyByThree(a, b) {
+  return multiplyTwoNumbers(addTwoNumbers(a, b), 3);
 }
 
-function addsTwoNumbersAndMultiplyByTen(a, b) {
-    return multiplyTwoNumbers((a - b) * 10);
+export function addsTwoNumbersAndMultiplyByTen(a, b) {
+  return multiplyTwoNumbers(addTwoNumbers(a, b), 10);
 }
